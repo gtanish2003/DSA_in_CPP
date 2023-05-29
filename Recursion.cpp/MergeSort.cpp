@@ -43,15 +43,15 @@ void merge(int *arr, int s, int e)
         }
     }
 
-    while(i<len1){
-        arr[k++]=arr1[i++];
+    while (i < len1)
+    {
+        arr[k++] = arr1[i++];
     }
 
-    while(j<len2){
-        arr[k++]=arr2[j++];
+    while (j < len2)
+    {
+        arr[k++] = arr2[j++];
     }
-
-    
 }
 
 void mergesort(int *arr, int s, int e)
@@ -81,10 +81,11 @@ int main()
         cin >> arr[i];
     }
 
-    mergesort(arr,0,n-1);
+    mergesort(arr, 0, n - 1);
 
-    cout<<"Array after sorting is :"<<endl;
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" "<<endl;
+    cout << "Array after sorting is :" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " " << endl;
     }
 }
